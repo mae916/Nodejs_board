@@ -7,29 +7,29 @@
             <dd>
                 
                 <input type="radio" name="status" id='status_ready' value="ready" v-model="picked">
-                <label for='status_ready'>준비중</label>
+                <label for='status_ready'>To Do</label>
 
                 <input type="radio" name="status" id='status_progress' value="progress" v-model="picked">
-                <label for='status_progress'>진행중</label>
+                <label for='status_progress'>Working</label>
 
                 <input type="radio" name="status" id='status_done' value="done" v-model="picked">
-                <label for='status_done'>완료</label>
+                <label for='status_done'>Done</label>
             </dd>
         </dl>
         <dl>
-            <dt>작업명</dt>
+            <dt>제목</dt>
             <dd>
                 <input type="text" name="subject" :value="kanban.subject">
             </dd>
         </dl>
         <dl>
-            <dt>작업내용</dt>
+            <dt>내용</dt>
             <dd>
                 <textarea name="content" :value="kanban.content"></textarea>                
             </dd>
         </dl>
-        <input type="submit" value="작업등록" v-if="mode == 'add'">
-        <input type="submit" value="작업수정" v-else>
+        <input type="submit" value="등록" v-if="mode == 'add'">
+        <input type="submit" value="수정" v-else>
     </form>
     <MessagePopup ref='popup' :message="message" />
 </template>

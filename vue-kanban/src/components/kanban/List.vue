@@ -1,7 +1,7 @@
 <template>
 <div class="lists_box">
     <div class='stit'>{{ title }}</div>
-    <ul class='work_list'>
+    <ul class='work_list'><!--  v-if="list.length > 0" -->
         <li :key="i" v-for="(li, i) in list" @click="goView(li.idx)">{{ li.subject }}</li>
     </ul>
 </div>
@@ -25,7 +25,7 @@ export default {
     async mounted() {
         switch(this.status) {
             default : 
-                this.title = "To Do"; //사용자가 입력해서 받아오는거 -> 카테고리 같은..?(ex.shopping, study...)
+                this.title = "To Do"; //사용자가 입력해서 받아오는거 + 추가 -> 카테고리 같은..?(ex.shopping, study...)
                 break;
             case "progress": 
                 this.title = "Working";

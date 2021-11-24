@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
 
 /** 공통 */
 * { 
     box-sizing: border-box;
     transition: all 1s;
     outline: none;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Gowun Batang', serif;
 }
 html { 
-    font-size: 13px; 
+    font-size: 17px; 
 }
 body { 
     margin: 0; 
     color: #212121;
-    background: orange;
+    background: white;
 }
 
 a { 
@@ -34,28 +34,39 @@ li {
     display: none !important; 
 }
 
+/* 로그인 */
+
+.login-padding {
+    padding-top: 10%;
+}
+
 input[type='text'],
 input[type='password'] {
-    width: 100%;
+    width: 30%;
     height: 55px;
-    font-size: 1.35rem;
+    font-size: 1.7rem;
     border: 1px solid #d5d5d5;
     border-radius: 3px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 0 15px;
     background-color: #ffffff;
 }
 
-input[type='text']:hover,
-input[type='password']:hover {
+input[type='text'] {
+    margin-bottom: 30px;
+}
+
+
+input[type='text']:focus,
+input[type='password']:focus {
     background-color: #cccccc;
 }
 
 input[type='submit'] {
-    width: 100%;
+    width: 30%;
     height: 55px;
     margin: 25px 0;
-    font-size: 1.35rem;
+    font-size: 1.7rem;
     background-color: #212121;
     color: #ffffff;
     border: 0;
@@ -64,8 +75,22 @@ input[type='submit'] {
     cursor: pointer;
 }
 
+.login_box input[type='text'],
+.login_box input[type='password'] {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.login_box input[type='text']:focus,
+.login_box input[type='password']:focus {
+    background-color: white;
+    border-radius: 0;
+    box-shadow: 0 3px 4px -4px black;
+}
+
 .stit { 
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
 }
 
@@ -115,7 +140,6 @@ input[type='submit'] {
 /** components/PageTitle.vue */
 .page_title {
     font-size: 2.5rem;
-    text-shadow:#212121 2px 2px 5px;
 }
 
 /** views/List.vue */
@@ -132,19 +156,35 @@ input[type='submit'] {
 }
 
 /** components/List.vue */
+.lists-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lists_box {
+    width: 30%;
+    box-shadow: 0 2px 8px 1px rgb(64 60 67 / 24%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
 .work_list {
     margin: 15px 0 50px;
 }
 
 .work_list li {
-    background-color: #ffffff;
+    background-color: white;
     margin-bottom: 10px;
     padding: 15px 10px; 
     border-radius: 8px;
-    box-shadow: 2px 2px 5px #212121;
     font-weight: bold;
+    border: 1px solid #88888846;
 }
 
+.work_list li:hover {
+    /* box-shadow: 2px 2px 7px #6b6b6b5d; */
+    box-shadow: 0 0 4px 0 #004b85
+}
 /** views/View.vue */
 .work_view {
     background:#ffffff;

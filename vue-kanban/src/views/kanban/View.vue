@@ -18,6 +18,7 @@
     
     <div v-html="view.contentHtml" class='content'></div>
     
+    
     <div class='btns'>
         <button type="button" @click="goLink('add')">추가</button>
         <button type="button" @click="goLink('edit')">수정</button>
