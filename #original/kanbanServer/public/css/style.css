@@ -12,13 +12,13 @@ html {
 }
 body { 
     margin: 0; 
-    color: #1A1A1A;
+    color: #212121;
     background: white;
 }
 
 a { 
     text-decoration: none; 
-    color: #1A1A1A;
+    color: #212121;
 }
 
 ul {
@@ -34,10 +34,6 @@ li {
     display: none !important; 
 }
 
-.layout_width {
-    margin: 0 auto;
-    width: 80%;
-}
 /* 로그인 */
 
 .login-padding {
@@ -71,7 +67,7 @@ input[type='submit'] {
     height: 55px;
     margin: 25px 0;
     font-size: 1.7rem;
-    background-color: #1A1A1A;
+    background-color: #212121;
     color: #ffffff;
     border: 0;
     font-weight: bold;
@@ -90,7 +86,7 @@ input[type='submit'] {
 .login_box input[type='password']:focus {
     background-color: white;
     border-radius: 0;
-    box-shadow: 0 3px 4px -4px #1A1A1A;
+    box-shadow: 0 3px 4px -4px black;
 }
 
 .stit { 
@@ -102,9 +98,8 @@ input[type='submit'] {
 #app {
     padding: 80px 10px 0;
 }
-
 #nav { 
- background-color: #1A1A1A;
+ background-color: black;
  text-align: left;
  padding: 10px;
  position: fixed;
@@ -113,7 +108,6 @@ input[type='submit'] {
  width: 100%;
  z-index: 10;
 }
-
 #nav i {
     font-size: 2.3rem;
     color: #ffffff;
@@ -153,7 +147,7 @@ input[type='submit'] {
     display: block;
     width: 100%; 
     height: 55px; 
-    background: #1A1A1A;
+    background: #212121;
     color: #ffffff;
     font-size: 1.5rem;
     line-height: 55px;
@@ -184,12 +178,12 @@ input[type='submit'] {
     padding: 15px 10px; 
     border-radius: 8px;
     font-weight: bold;
-    border: 1px solid #c9c9c9b2;
+    border: 1px solid #88888846;
 }
 
 .work_list li:hover {
     /* box-shadow: 2px 2px 7px #6b6b6b5d; */
-    box-shadow: 0 0 4px 0 #FFF447
+    box-shadow: 0 0 4px 0 #004b85
 }
 /** views/View.vue */
 .work_view {
@@ -210,16 +204,16 @@ input[type='submit'] {
 .work_view dt { 
     display: table-cell;
     vertical-align: middle;
-    width: 90px;
+    width: 80px;
     text-align: right;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 .work_view dd {
     display: table-cell;
     text-align: left; 
     padding-left: 20px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .work_view .content {
@@ -227,40 +221,26 @@ input[type='submit'] {
     padding: 10px; 
     text-align: left;
     margin-bottom: 25px;
-    font-size: 1.1rem;
 }
-
-/*
-.work_view .btns {
-    display: flex;
-    justify-content: space-between;
-}
-*/
 
 .work_view .btns button {
     width: calc(100% / 4);
+    height: 40px;
     border-radius: 0;
     border: 0;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 10px 0;
-    cursor: pointer;
+    color: #ffffff;
 }
 .work_view .btns button:nth-child(1) {
-    background:#3EB595;
-    color: #ffffff;
+    background:blue;
 }
 .work_view .btns button:nth-child(2) {
-    background: #FFF447;
-    color: #696969;
+    background: green;
 }
 .work_view .btns button:nth-child(3) {
-    background: #C9C9C9;
-    color: #696969;
+    background: red;
 }
 .work_view .btns button:nth-child(4) {
-    background: #696969;
-    color: #ffffff;
+    background: #212121;
 }
 
 /** components/Form.vue */
@@ -271,7 +251,7 @@ input[type='submit'] {
 #frmKanban dt {
     padding: 10px;
     margin: 0;
-    background:#1A1A1A;
+    background:#212121;
     color: #ffffff;
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -296,7 +276,7 @@ input[type='submit'] {
 }
 #frmKanban input[type='radio']+label {
     display: inline-block;
-    border: 1px solid #1A1A1A;
+    border: 1px solid #000000;
     background: #ffffff;
     padding: 10px 25px;
     margin: 0 2px;
@@ -305,6 +285,6 @@ input[type='submit'] {
 }
 
 #frmKanban input[type='radio']:checked+label {
-    background: #1A1A1A;
+    background: #000000;
     color: #ffffff;
 }

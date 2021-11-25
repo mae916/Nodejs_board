@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 
 /** 공통 */
 * { 
     box-sizing: border-box;
     transition: all 1s;
     outline: none;
-    font-family: 'Gowun Batang', serif;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 html { 
-    font-size: 17px; 
+    font-size: 13px; 
 }
 body { 
     margin: 0; 
-    color: #1A1A1A;
-    background: white;
+    color: #212121;
+    background: orange;
 }
 
 a { 
     text-decoration: none; 
-    color: #1A1A1A;
+    color: #212121;
 }
 
 ul {
@@ -34,44 +34,29 @@ li {
     display: none !important; 
 }
 
-.layout_width {
-    margin: 0 auto;
-    width: 80%;
-}
-/* 로그인 */
-
-.login-padding {
-    padding-top: 10%;
-}
-
 input[type='text'],
 input[type='password'] {
-    width: 30%;
+    width: 100%;
     height: 55px;
-    font-size: 1.7rem;
+    font-size: 1.35rem;
     border: 1px solid #d5d5d5;
     border-radius: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding: 0 15px;
     background-color: #ffffff;
 }
 
-input[type='text'] {
-    margin-bottom: 30px;
-}
-
-
-input[type='text']:focus,
-input[type='password']:focus {
+input[type='text']:hover,
+input[type='password']:hover {
     background-color: #cccccc;
 }
 
 input[type='submit'] {
-    width: 30%;
+    width: 100%;
     height: 55px;
     margin: 25px 0;
-    font-size: 1.7rem;
-    background-color: #1A1A1A;
+    font-size: 1.35rem;
+    background-color: #212121;
     color: #ffffff;
     border: 0;
     font-weight: bold;
@@ -79,22 +64,8 @@ input[type='submit'] {
     cursor: pointer;
 }
 
-.login_box input[type='text'],
-.login_box input[type='password'] {
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid #d5d5d5;
-}
-
-.login_box input[type='text']:focus,
-.login_box input[type='password']:focus {
-    background-color: white;
-    border-radius: 0;
-    box-shadow: 0 3px 4px -4px #1A1A1A;
-}
-
 .stit { 
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -102,9 +73,8 @@ input[type='submit'] {
 #app {
     padding: 80px 10px 0;
 }
-
 #nav { 
- background-color: #1A1A1A;
+ background-color: black;
  text-align: left;
  padding: 10px;
  position: fixed;
@@ -113,7 +83,6 @@ input[type='submit'] {
  width: 100%;
  z-index: 10;
 }
-
 #nav i {
     font-size: 2.3rem;
     color: #ffffff;
@@ -146,6 +115,7 @@ input[type='submit'] {
 /** components/PageTitle.vue */
 .page_title {
     font-size: 2.5rem;
+    text-shadow:#212121 2px 2px 5px;
 }
 
 /** views/List.vue */
@@ -153,7 +123,7 @@ input[type='submit'] {
     display: block;
     width: 100%; 
     height: 55px; 
-    background: #1A1A1A;
+    background: #212121;
     color: #ffffff;
     font-size: 1.5rem;
     line-height: 55px;
@@ -162,35 +132,19 @@ input[type='submit'] {
 }
 
 /** components/List.vue */
-.lists-flex {
-    display: flex;
-    justify-content: space-around;
-}
-
-.lists_box {
-    width: 30%;
-    box-shadow: 0 2px 8px 1px rgb(64 60 67 / 24%);
-    border-radius: 10px;
-    padding: 20px;
-}
-
 .work_list {
     margin: 15px 0 50px;
 }
 
 .work_list li {
-    background-color: white;
+    background-color: #ffffff;
     margin-bottom: 10px;
     padding: 15px 10px; 
     border-radius: 8px;
+    box-shadow: 2px 2px 5px #212121;
     font-weight: bold;
-    border: 1px solid #c9c9c9b2;
 }
 
-.work_list li:hover {
-    /* box-shadow: 2px 2px 7px #6b6b6b5d; */
-    box-shadow: 0 0 4px 0 #FFF447
-}
 /** views/View.vue */
 .work_view {
     background:#ffffff;
@@ -210,16 +164,16 @@ input[type='submit'] {
 .work_view dt { 
     display: table-cell;
     vertical-align: middle;
-    width: 90px;
+    width: 80px;
     text-align: right;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 .work_view dd {
     display: table-cell;
     text-align: left; 
     padding-left: 20px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .work_view .content {
@@ -227,40 +181,26 @@ input[type='submit'] {
     padding: 10px; 
     text-align: left;
     margin-bottom: 25px;
-    font-size: 1.1rem;
 }
-
-/*
-.work_view .btns {
-    display: flex;
-    justify-content: space-between;
-}
-*/
 
 .work_view .btns button {
     width: calc(100% / 4);
+    height: 40px;
     border-radius: 0;
     border: 0;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 10px 0;
-    cursor: pointer;
+    color: #ffffff;
 }
 .work_view .btns button:nth-child(1) {
-    background:#3EB595;
-    color: #ffffff;
+    background:blue;
 }
 .work_view .btns button:nth-child(2) {
-    background: #FFF447;
-    color: #696969;
+    background: green;
 }
 .work_view .btns button:nth-child(3) {
-    background: #C9C9C9;
-    color: #696969;
+    background: red;
 }
 .work_view .btns button:nth-child(4) {
-    background: #696969;
-    color: #ffffff;
+    background: #212121;
 }
 
 /** components/Form.vue */
@@ -271,7 +211,7 @@ input[type='submit'] {
 #frmKanban dt {
     padding: 10px;
     margin: 0;
-    background:#1A1A1A;
+    background:#212121;
     color: #ffffff;
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -296,7 +236,7 @@ input[type='submit'] {
 }
 #frmKanban input[type='radio']+label {
     display: inline-block;
-    border: 1px solid #1A1A1A;
+    border: 1px solid #000000;
     background: #ffffff;
     padding: 10px 25px;
     margin: 0 2px;
@@ -305,6 +245,6 @@ input[type='submit'] {
 }
 
 #frmKanban input[type='radio']:checked+label {
-    background: #1A1A1A;
+    background: #000000;
     color: #ffffff;
 }

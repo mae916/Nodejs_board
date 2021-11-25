@@ -210,16 +210,16 @@ input[type='submit'] {
 .work_view dt { 
     display: table-cell;
     vertical-align: middle;
-    width: 90px;
+    width: 80px;
     text-align: right;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 .work_view dd {
     display: table-cell;
     text-align: left; 
     padding-left: 20px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .work_view .content {
@@ -227,24 +227,14 @@ input[type='submit'] {
     padding: 10px; 
     text-align: left;
     margin-bottom: 25px;
-    font-size: 1.1rem;
 }
-
-/*
-.work_view .btns {
-    display: flex;
-    justify-content: space-between;
-}
-*/
 
 .work_view .btns button {
     width: calc(100% / 4);
+    height: 40px;
     border-radius: 0;
     border: 0;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 10px 0;
-    cursor: pointer;
+    font-size: 1.1rem;
 }
 .work_view .btns button:nth-child(1) {
     background:#3EB595;
